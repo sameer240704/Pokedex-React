@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./styles.css";
 
-function App() {
+export default function App() {
+  const [isOpen, setIsOpen] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-lvh w-screen bg-[url('/assets/background-image.jpg')] bg-center bg-cover bg-no-repeat">
+      {isOpen ? (
+        <div className="h-[500px] w-[500px] bg-red-700">
+          <div>Hello World</div>
+        </div>
+      ) : null}
     </div>
   );
 }
-
-export default App;
