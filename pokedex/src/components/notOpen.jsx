@@ -7,7 +7,9 @@ const NotOpen = () => {
 
     const [ isPokedexOpen, setIsPokedexOpen ] = useState(false);
 
-    const clickArrowButton = () => !isPokedexOpen;
+    const clickArrowButton = () => {
+            setIsPokedexOpen(!isPokedexOpen);
+    }
 
     return (
         <>
@@ -25,7 +27,10 @@ const NotOpen = () => {
                 </div>
                 <div className="h-[480px] w-[110px] bg-transparent border-4 border-[#99061F] absolute top-[70.5px] left-[384px] border-x-0 border-b-0">
                 </div>
-                <img src={openBtn} className="h-[40px] absolute top-[300px] left-4 cursor-pointer active:scale-90" alt="Open Button"/>
+                <img src={openBtn} className="h-[40px] absolute top-[300px] left-4 cursor-pointer active:scale-90" alt="Open Button"
+                    onClick={ () => clickArrowButton() }
+                
+                />
                 <div className="flex-col align-middle justify-center absolute top-[550px] left-[105px]">
                     <div className="h-[5px] w-[250px] bg-red-900 rounded mb-1"></div>
                     <div className="h-[5px] w-[250px] bg-red-900 rounded"></div>
