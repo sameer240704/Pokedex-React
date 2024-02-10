@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Open from "./Open";
-import openBtn from "../assets/openbtn.png";
-import pokedexLogo from "../assets/pokedex_logo.png";
+import openBtn from "../assets/image/openbtn.png";
+import pokedexLogo from "../assets/image/pokedex_logo.png";
+import theme_audio from "../assets/audio/theme.mp3";
 
 const NotOpen = () => {
 
     const [ isPokedexOpen, setIsPokedexOpen ] = useState(false);
+    // const [ audioLoaded, setAudioLoaded ] = useState(false);
 
     const clickArrowButton = () => {
             setIsPokedexOpen(!isPokedexOpen);
+            playAudio();
+    }
+
+    const playAudio = () => {
+        const audio = new Audio(theme_audio);
+        !isPokedexOpen ? audio.play() : audio.pause()
     }
 
     return (
