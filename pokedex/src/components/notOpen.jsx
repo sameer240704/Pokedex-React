@@ -55,7 +55,7 @@ const NotOpen = () => {
                     </div>
                 </div>
                 <img src={pokedexLogo} alt="Pokedex Logo" className="h-[100px] w-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"/>
-            </div> ) : <Open />}
+            </div> ) : <Open isPokedexOpen = { isPokedexOpen } />}
         </>
     )
 }
