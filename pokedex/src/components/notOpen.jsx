@@ -37,7 +37,6 @@ const NotOpen = () => {
                 </div>
                 <img src={openBtn} className="h-[40px] absolute top-[300px] left-4 cursor-pointer active:scale-90" alt="Open Button"
                     onClick={ () => clickArrowButton() }
-                
                 />
                 <div className="flex-col align-middle justify-center absolute top-[550px] left-[105px]">
                     <div className="h-[5px] w-[250px] bg-red-900 rounded mb-1"></div>
