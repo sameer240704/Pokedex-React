@@ -7,10 +7,10 @@ module.exports = {
         "background-image": "url('./assets/image/background-image.jpg')",
       },
       colors: {
-        "regal-blue": "#243C5A",
-        "pokemon-red": "#DC0A2D",
-        "pokemon-border-red": "#99061F",
-        "hinge-color": "#D40230"
+        "regalBlue": "#243C5A",
+        "pokemonRed": "#DC0A2D",
+        "pokemonBorderRed": "#99061F",
+        "hingeColor": "#D40230"
       },
       height: {
         "600": "600px",
