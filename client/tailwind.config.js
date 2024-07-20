@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -42,7 +45,7 @@ module.exports = {
         "70.5px": "70.5px"
       },
       margin: {
-        
+
       },
       rotate: {
         "21.4": "21.4deg"
@@ -52,36 +55,36 @@ module.exports = {
       },
       keyframes: {
         colorBlue: {
-          '0%, 100%': {backgroundColor: "#2b6fff"},
-          '10%, 90%': {backgroundColor: "#1963ff"},
-          '20%, 80%': {backgroundColor: "#0052ff"},
-          '30%, 70%': {backgroundColor: "#0048e0"},
-          '40%, 60%': {backgroundColor: "#003dbd"},
-          '50%': {backgroundColor: "#0037ab"}
+          '0%, 100%': { backgroundColor: "#2b6fff" },
+          '10%, 90%': { backgroundColor: "#1963ff" },
+          '20%, 80%': { backgroundColor: "#0052ff" },
+          '30%, 70%': { backgroundColor: "#0048e0" },
+          '40%, 60%': { backgroundColor: "#003dbd" },
+          '50%': { backgroundColor: "#0037ab" }
         },
         colorRed: {
-          '0%, 100%': {backgroundColor: "#ff3333"},
-          '10%, 90%': {backgroundColor: "#ff1c1c"},
-          '20%, 80%': {backgroundColor: "#ff0000"},
-          '30%, 70%': {backgroundColor: "#e30000"},
-          '40%, 60%': {backgroundColor: "#c90000"},
-          '50%': {backgroundColor: "#b80000"}
+          '0%, 100%': { backgroundColor: "#ff3333" },
+          '10%, 90%': { backgroundColor: "#ff1c1c" },
+          '20%, 80%': { backgroundColor: "#ff0000" },
+          '30%, 70%': { backgroundColor: "#e30000" },
+          '40%, 60%': { backgroundColor: "#c90000" },
+          '50%': { backgroundColor: "#b80000" }
         },
         colorYellow: {
-          '0%, 100%': {backgroundColor: "#ffd324"},
-          '10%, 90%': {backgroundColor: "#ffd014"},
-          '20%, 80%': {backgroundColor: "#ffcc00"},
-          '30%, 70%': {backgroundColor: "#e6b800"},
-          '40%, 60%': {backgroundColor: "#d1a700"},
-          '50%': {backgroundColor: "#bf9900"}
+          '0%, 100%': { backgroundColor: "#ffd324" },
+          '10%, 90%': { backgroundColor: "#ffd014" },
+          '20%, 80%': { backgroundColor: "#ffcc00" },
+          '30%, 70%': { backgroundColor: "#e6b800" },
+          '40%, 60%': { backgroundColor: "#d1a700" },
+          '50%': { backgroundColor: "#bf9900" }
         },
         colorGreen: {
-          '0%, 100%': {backgroundColor: "#21ff73"},
-          '10%, 90%': {backgroundColor: "#14ff6b"},
-          '20%, 80%': {backgroundColor: "#03ff60"},
-          '30%, 70%': {backgroundColor: "#00e856"},
-          '40%, 60%': {backgroundColor: "#00d64f"},
-          '50%': {backgroundColor: "#00c448"}
+          '0%, 100%': { backgroundColor: "#21ff73" },
+          '10%, 90%': { backgroundColor: "#14ff6b" },
+          '20%, 80%': { backgroundColor: "#03ff60" },
+          '30%, 70%': { backgroundColor: "#00e856" },
+          '40%, 60%': { backgroundColor: "#00d64f" },
+          '50%': { backgroundColor: "#00c448" }
         }
       },
       animation: {
@@ -93,4 +96,5 @@ module.exports = {
     },
   },
   plugins: [],
-};
+}
+

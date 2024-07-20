@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import NotOpen from "./components/notOpen";
 import Open from "./components/Open";
-import "./styles.css";
 
 export default function App() {
   return (
